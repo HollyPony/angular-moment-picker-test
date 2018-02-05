@@ -7,7 +7,7 @@ require('angular-moment-picker')
 
 angular.module('app', [
   'moment-picker'
-]).controller('AppController', ['$scope', function App($scope) {
+]).controller('AppController', [() => {
   moment.locale('en')
   $scope.myDate = moment()
 }])
